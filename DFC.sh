@@ -1,5 +1,5 @@
 # Automatically delete firefox cache if full.
-# Firefox Cache Location: /Users/ramonetbarrera/Library/Caches/Firefox/Profiles/ngov24pu.default-release/cache2/entries
+# Firefox Cache Location: /Users/username/Library/Caches/Firefox/Profiles/ngov24pu.default-release/cache2/entries
 
 # Create a logo for the script
 echo "
