@@ -1,5 +1,5 @@
 # Automatically Delete Firefox Startup Cache on mac
-# Startup Cache Location: Users/ramonetbarrera/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/
+# Startup Cache Location: Users/Username/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/
 
 
 # Welcome logo and warnings
@@ -33,7 +33,7 @@ read answer
 # if the user types 'size', check the startup cache folder size
 if [ $answer = "size" ]; then
     echo "The startup cache folder size is:"
-    du -sh /Users/ramonetbarrera/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/
+    du -sh /Users/Username/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/
     echo "Do you want to check the startup cache folder size again, check the startup cache folder contents, delete the startup cache folder, or quit the script?"
     read answer
 fi
@@ -41,7 +41,7 @@ fi
 # if the user types 'contents', check the startup cache folder contents
 if [ $answer = "contents" ]; then
     echo "The startup cache folder contents are:"
-    ls /Users/ramonetbarrera/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/
+    ls /Users/Username/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/
     echo "Do you want to check the startup cache folder size again, check the startup cache folder contents, delete the startup cache folder, or quit the script?"
     read answer
 fi
@@ -49,7 +49,7 @@ fi
 # if the user types 'delete', delete the startup cache folder
 if [ $answer = "delete" ]; then
     echo "Deleting the startup cache folder..."
-    rm -rf /Users/ramonetbarrera/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/ 
+    rm -rf /Users/Username/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/ 
     echo "Do you want to check the startup cache folder size again, check the startup cache folder contents, delete the startup cache folder, or quit the script?"
     read answer
 fi
@@ -61,7 +61,7 @@ if [ $answer = "quit" ]; then
 fi
 
 # if the startupcache folder does not exist, notify the user
-if [ ! -d /Users/ramonetbarrera/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/ ]; then
+if [ ! -d /Users/Username/Library/Caches/Firefox/Profiles/ngov24pu.default-release/startupCache/ ]; then
     echo "The startup cache folder does not exist."
     echo "Do you want to check the startup cache folder size again, check the startup cache folder contents, delete the startup cache folder, or quit the script?"
     read answer
